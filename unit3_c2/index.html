@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      #navbar{
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        width: 100%;
+        background-color: aquamarine;
+      }
+      #container{
+        height: 300px;
+        width: 200px;
+        margin: auto;
+        background-color: peachpuff;
+        padding-left: 20px;
+      }
+      #name{
+        margin-bottom: 20px;
+        
+      }
+      #email{
+        margin-bottom: 20px;
+      }
+      #address{
+        margin-bottom: 20px;
+      }
+      #amount{
+        margin-bottom: 20px;
+      }
+      h2{
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h3>Sign Up</h3>
+      <a href="voucher.html">Purchase Voucher</a>
+    </div>
+    <!-- - name input box :- "name"
+  - email input box :- "email"
+  - Address input box :- "address"
+  - Amount input box :- "amount" 
+  - Submit button :- "submit"
+  - The user will be stored with key:- "user"
+  - The input fields should become empty after submitting -->
+  <div id="container">
+    <h2>Sign Up</h2>
+    <form onsubmit="addtocart(event)" id="form">
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="email" placeholder="Email">
+    <input type="text" id="address" placeholder="Address">
+    <input type="number" id="amount" placeholder="Add amount in wallet">
+    <button id="submit">Submit</button>
+  </form>
+  </div>
+  </body>
+</html>
+
+<script src="scripts/main.js"></script>
+
